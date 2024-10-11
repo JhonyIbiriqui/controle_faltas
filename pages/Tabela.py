@@ -9,6 +9,10 @@ tb_base["DATA"] = pd.to_datetime(tb_base["DATA"], dayfirst=True, errors='coerce'
 
 tb_base_new = tb_base.sort_values(by="DATA", ascending=False)
 
+
+
+
+
 logo = "assets/LOGO_MARIMEL.png"
 
 with st.container():
@@ -17,6 +21,7 @@ with st.container():
 
 with st.sidebar:
     st.logo(logo,size="large" )
+   
     #Colab_select_box = st.selectbox("Colaboradores", tb_base["NOME COLABORADOR"].unique())
     
 
