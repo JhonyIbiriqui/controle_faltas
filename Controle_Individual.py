@@ -3,7 +3,7 @@ import pandas as pd
 
 
 #st.set_page_config(layout="wide")
-tb_base = pd.read_csv('datasets\\controle de faltas.csv')
+tb_base = pd.read_csv("datasets/Controle de faltas.csv")
 
 
 #tb_base["DATA"] = pd.to_datetime(tb_base["DATA"], dayfirst=True, errors='coerce')
@@ -16,7 +16,7 @@ substituicoes = {
 
 tb_base["NOME COLABORADOR"] = tb_base["NOME COLABORADOR"].replace(substituicoes)
 
-logo = "assets\\LOGO_MARIMEL.png"
+logo = "assets/LOGO_MARIMEL.png"
 
 with st.container():
     title = st.title("Controle de Faltas - :red[RH]")
