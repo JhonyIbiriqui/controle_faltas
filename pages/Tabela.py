@@ -4,12 +4,12 @@ import pandas as pd
 st.set_page_config(layout="centered")
 
 #st.set_page_config(layout="wide")
-tb_base = pd.read_csv('datasets\\controle de faltas.csv')
+tb_base = pd.read_csv('datasets/Controle de faltas.csv')
 tb_base["DATA"] = pd.to_datetime(tb_base["DATA"], dayfirst=True, errors='coerce')
 
 tb_base_new = tb_base.sort_values(by="DATA", ascending=False)
 
-logo = "assets\\LOGO_MARIMEL.png"
+logo = "assets/LOGO_MARIMEL.png"
 
 with st.container():
     title = st.title("Controle de Faltas - :red[RH]")
