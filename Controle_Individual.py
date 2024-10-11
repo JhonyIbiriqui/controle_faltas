@@ -23,8 +23,8 @@ with st.container():
     st.divider()
 
 
-datamax = tb_base["DATA"].max()
-datamin = tb_base["DATA"].min()
+#datamax = tb_base["DATA"].max()
+#datamin = tb_base["DATA"].min()
 
 
 with st.sidebar:
